@@ -1,0 +1,68 @@
+@font-face {
+	font-family: "PokemonHollowFont";
+	src: url(PokemonHollowNormal.woff2) format("woff2"),
+		url(PokemonHollowNormal.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PokemonSolidFont";
+	src: url(PokemonSolidNormal.woff2) format("woff2"),
+		url(PokemonSolidNormal.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #7d78a3;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	gap: 20px;
+	max-width: 500px;
+	margin: 20px;
+}
+
+.container img {
+	max-width: 50%;
+}
+
+.container h1 {
+	font-family: "PokemonSolidFont", sans-serif;
+}
+
+.container p {
+	font-family: "PokemonHollowFont", sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.container .choicebtn {
+	display: flex;
+	gap: 25px;
+}
+
+.choicebtn a {
+	text-decoration: none;
+	color: #111;
+	background: #fff;
+	padding: 10px 25px;
+	border-radius: 10px;
+	box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
